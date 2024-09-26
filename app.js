@@ -6,14 +6,6 @@ menuIcon.addEventListener("click", () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 })
-
-
-
-
-
-
-
-
 // =====================================Scroll section active link==============================================
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
@@ -35,4 +27,27 @@ window.onscroll = () => {
     // =====================================Stickey navbar==============================================
     let header = document.querySelector('header');
     header.classList.toggle('stickey',window.scrollY > 100)
+   
+     
+menuIcon.classList.remove('bx-x');
+navbar.classList.remove('active');
+
+
+
 }
+
+
+//================Scroll reval ========================
+ScrollReveal({ 
+    // reset: true,
+    distance:'80px',
+    duration : 2000,
+    delay : 200
+});
+
+ScrollReveal().reveal('.home-contant,.heading', {origin : 'top'});
+ScrollReveal().reveal('.home-img,.services-container,.portfolio-box,.contact form', {origin : 'bottom'});
+ScrollReveal().reveal('.home-contant h1,.about-img', {origin : 'left'});
+ScrollReveal().reveal('.home-contant p,.about-contant', {origin : 'right'});
+
+

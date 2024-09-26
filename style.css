@@ -92,6 +92,18 @@ span{
 .home-img img {
     
     border-radius: 50%;
+    animation: floatImage 4s ease-in-out infinite;
+}
+@keyframes floatImage{
+    0%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translate(-2.4rem);
+    }
+   100%{
+        transform: translate(0);
+    }
 }
 .home-contant p {
     font-size: 1.6rem;
@@ -339,6 +351,15 @@ span{
     section{
         padding: 10rem 3%  2rem ;
     }
+    .services{
+        padding-bottom: 7rem;
+    }
+    .portfolio{
+        padding-bottom: 7rem;
+    }
+    .contact{
+        min-height: auto;
+    }
     .footer{
         padding: 2rem 3%;
     }
@@ -366,4 +387,64 @@ span{
         font-size: 2rem;
         margin: 3rem 0;
     }
+    .home{
+        flex-direction: column;
+    }
+    .home-contant h3{
+        font-size: 2.6rem;
+    }
+    .home-contant h1{
+        font-size: 5rem;
+    }
+    .home-img img{
+        width: 42vh;
+        margin-top: 4rem;
+    }
+    .about{
+        flex-direction: column-reverse;
+    }
+    .about-img img{
+        margin-top: 4rem;
+        width: 42vh;
+    }
+    .services h2{
+         margin-bottom: 3rem;
+    }
+    .portfolio h2{
+        margin-bottom: 3rem;
+    }
+    .portfolio-container{
+        grid-template-columns: repeat(2,1fr);
+    }
  }
+
+
+@media(max-width:617px){
+    .portfolio-container{
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width:450px){
+      html {
+        font-size: 50%;
+    }
+    .contact form .input-box input{
+        width: 100%;
+    }
+}
+
+@media(max-width:450px){
+    .home-img img{
+        width: 80vw;
+    }
+    .about-img img{
+        width: 80vw;
+    }
+    .footer{
+        flex-direction: column-reverse;
+    }
+    .footer p{
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
