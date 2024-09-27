@@ -51,11 +51,11 @@ ScrollReveal().reveal('.home-contant h1,.about-img', {origin : 'left'});
 ScrollReveal().reveal('.home-contant p,.about-contant', {origin : 'right'});
 // =====================typrd js =========================
 
-const typed = new typed('.multiple-text', {
-    strings: ['Frontend Developer','Student','PhotoGrapher'],
-    typeSpeed : 100,
-    backSpeed : 100,
-    backDelay : 1000,
-    loop : true
-});
+// const typed = new typed('.multiple-text', {
+//     strings: ['Frontend Developer','Student','PhotoGrapher'],
+//     typeSpeed : 100,
+//     backSpeed : 100,
+//     backDelay : 1000,
+//     loop : true
+// });
 
