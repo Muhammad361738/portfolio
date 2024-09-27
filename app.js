@@ -49,5 +49,13 @@ ScrollReveal().reveal('.home-contant,.heading', {origin : 'top'});
 ScrollReveal().reveal('.home-img,.services-container,.portfolio-box,.contact form', {origin : 'bottom'});
 ScrollReveal().reveal('.home-contant h1,.about-img', {origin : 'left'});
 ScrollReveal().reveal('.home-contant p,.about-contant', {origin : 'right'});
+// =====================typrd js =========================
 
+const typed = new typed('.multiple-text', {
+    strings: ['Frontend Developer','Student','PhotoGrapher'],
+    typeSpeed : 100,
+    backSpeed : 100,
+    backDelay : 1000,
+    loop : true
+});
 
